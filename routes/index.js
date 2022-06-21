@@ -7,11 +7,11 @@ const addressRoutes = require("./addressRoutes");
 const tokenRoutes = require("./tokenRoutes");
 
 module.exports = (app) => {
-  app.use("/categories", categoryRoutes);
-  app.use("/products", productRoutes);
-  app.use("/users", userRoutes);
-  app.use("/admins", adminRoutes);
-  app.use("/orders", orderRoutes);
-  app.use("/addresses", addressRoutes);
-  app.use("/tokens", tokenRoutes);
+  app.use(categoryRoutes);
+  app.use(productRoutes);
+  app.use(userRoutes);
+  app.use(adminRoutes);
+  app.use(orderRoutes);
+  app.use(addressRoutes);
+  app.use(tokenRoutes);
 };

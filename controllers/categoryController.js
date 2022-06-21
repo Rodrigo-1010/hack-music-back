@@ -1,5 +1,10 @@
+const Category = require("../models/Category");
+
 // Display a listing of categories.
-async function index(req, res) {}
+async function index(req, res) {
+  const categories = await Category.find();
+  res.json({ msg: "Hola" });
+}
 
 // Display the specified category.
 async function show(req, res) {}

@@ -11,6 +11,4 @@ module.exports = {
   index,
   show,
   store,
-  update,
-  destroy,
 };

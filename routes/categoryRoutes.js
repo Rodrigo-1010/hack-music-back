@@ -2,10 +2,10 @@ const express = require("express");
 const categoryRouter = express.Router();
 const categoryController = require("../controllers/categoryController");
 
-categoryRouter.get("/", categoryController.index);
-categoryRouter.get("/:id", categoryController.show);
-categoryRouter.post("/", categoryController.store);
-categoryRouter.patch("/:id", categoryController.update);
-categoryRouter.delete("/:id", categoryController.destroy);
+categoryRouter.get("/categories", categoryController.index);
+categoryRouter.get("/categories/:id", categoryController.show);
+categoryRouter.post("/categories", categoryController.store);
+categoryRouter.patch("/categories/:id", categoryController.update);
+categoryRouter.delete("/categories/:id", categoryController.destroy);
 
 module.exports = categoryRouter;

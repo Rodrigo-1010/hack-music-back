@@ -2,10 +2,10 @@ const express = require("express");
 const adminRouter = express.Router();
 const adminController = require("../controllers/adminController");
 
-adminRouter.get("/", adminController.index);
-adminRouter.get("/:id", adminController.show);
-adminRouter.post("/", adminController.store);
-adminRouter.patch("/:id", adminController.update);
-adminRouter.delete("/:id", adminController.destroy);
+adminRouter.get("/admins", adminController.index);
+adminRouter.get("/admins/:id", adminController.show);
+adminRouter.post("/admins", adminController.store);
+adminRouter.patch("/admins/:id", adminController.update);
+adminRouter.delete("/admins/:id", adminController.destroy);
 
 module.exports = adminRouter;

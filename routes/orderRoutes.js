@@ -2,8 +2,8 @@ const express = require("express");
 const orderRouter = express.Router();
 const orderController = require("../controllers/orderController");
 
-orderRouter.get("/", orderController.index);
-orderRouter.get("/:id", orderController.show);
-orderRouter.post("/", orderController.store);
+orderRouter.get("/orders", orderController.index);
+orderRouter.get("/orders/:id", orderController.show);
+orderRouter.post("/orders", orderController.store);
 
 module.exports = orderRouter;
