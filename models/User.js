@@ -6,8 +6,8 @@ const userSchema = new Schema({
   lastName: String,
   email: String,
   phone: Number,
-  address: { type: [], ref: Address }, //array con id de referencias a Address
-  orders: { type: [], ref: Order }, //array con id de referencias a Order
+  address: [{ type: Schema.ObjectId, ref: Address }], //array con id de referencias a Address
+  orders: [{ type: Schema.ObjectId, ref: Order }], //array con id de referencias a Order
 });
 
 const User = mongoose.model("User", userSchema);
