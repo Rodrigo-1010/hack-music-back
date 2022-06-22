@@ -6,8 +6,8 @@ const userSchema = new Schema({
   lastName: String,
   email: String,
   phone: Number,
-  address: [], //array con id de referencias a Address
-  orders: [], //array con id de referencias a Order
+  address: { type: [], ref: Address }, //array con id de referencias a Address
+  orders: { type: [], ref: Order }, //array con id de referencias a Order
 });
 
 const User = mongoose.model("User", userSchema);
