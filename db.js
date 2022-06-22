@@ -6,5 +6,8 @@ module.exports = async function dbSetup() {
   mongoose.connection
     .once("open", () => console.log("¡Conexión con la base de datos establecida!"))
     .on("error", (error) => console.log(error));
-  seedDB();
+
+  //Comentar/descomentar seedDb() para que seeders se ejecuten automaticamente cada vez que se levanta el servidor.
+
+  // seedDB();
 };
