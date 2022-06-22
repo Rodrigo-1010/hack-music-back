@@ -26,7 +26,6 @@ async function store(req, res) {
     const newCategory = await Category.create({
       name: req.body.name,
       description: req.body.description,
-      picture: req.body.picture,
       slug: req.body.slug,
     });
     res.status(201).json(newCategory);
@@ -37,7 +36,7 @@ async function store(req, res) {
 
 // Update the specified category in storage.
 async function update(req, res) {
-  const { name, description, picture, slug } = req.body;
+  const { name, description, slug } = req.body;
   try {
     const updatedCategory = await Category.findByIdAndUpdate(
       { _id: req.params.id },
