@@ -40,7 +40,20 @@ async function store(req, res) {
 }
 
 // Update the specified product in storage.
-async function update(req, res) {}
+async function update(req, res) {
+  const { name, category, description, price, stock, outstand, slug } = req.body;
+  try {
+    //SI NO ENCUENTRA EL PRODUCTO POR SU ID EN LA DB DEVUELVE 'null', AUN NO ENCONTRE COMO CONFIGURAR PARA DEVOLVER MSJ DE ERROR ACORDE.
+    const updatedProduct = await Product.findByIdAndUpdate(
+      { _id: req.params.id },
+      { name, category, description, price, stock, outstand, slug },
+    );
+
+    res.status(200).json(updatedProduct);
+  } catch (err) {
+    res.status(500).json({ msg: err.message });
+  }
+}
 
 // Remove the specified product from storage.
 async function destroy(req, res) {
@@ -52,7 +65,8 @@ async function destroy(req, res) {
     // const removedProduct = await Product.deleteOne({ _id: req.params.id });
     // res.status(200).json(removedProduct);
     //
-    //DEJO 2 VERSIONES, USANDO LA 2NDA SI NO ENCUENTRA EL PRODUCTO POR SU ID EN LA DB DEVUELVE 'null', AUN NO ENCONTRE COMO CONFIGURAR PARA DEVOLVER MSJ DE ERROR ACORDE.
+    //DEJO 2 VERSIONES, USANDO LA 2NDA SI NO ENCUENTRA EL PRODUCTO POR SU ID EN LA DB DEVUELVE 'null', AUN NO ENCONTRE COMO CONFIGURAR PARA DEVOLVER MSJ DE ERROR ACORDE. PRIMERA OPCION SI PODEMOS FILTRAR EN CASO NO ENCUENTRE EL PRODUCTO Y DEVOLVER MSJ ACORDE.
+    //
     const deletedProduct = await Product.findByIdAndDelete(req.params.id);
     res.status(200).json(deletedProduct);
   } catch (err) {
