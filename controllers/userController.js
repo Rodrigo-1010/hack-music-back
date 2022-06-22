@@ -40,9 +40,10 @@ async function update(req, res) {
   const { firstName, lastName, email, phone } = req.body;
   try {
     //SI NO ENCUENTRA EL PRODUCTO POR SU ID EN LA DB DEVUELVE 'null', AUN NO ENCONTRE COMO CONFIGURAR PARA DEVOLVER MSJ DE ERROR ACORDE.
-    const updatedUser = await Product.findByIdAndUpdate(
+    const updatedUser = await User.findByIdAndUpdate(
       { _id: req.params.id },
       { firstName, lastName, email, phone },
+      { new: true },
     );
 
     res.status(200).json(updatedUser);
