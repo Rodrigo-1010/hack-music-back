@@ -6,7 +6,7 @@ const categorySchema = new Schema({
   description: String,
   picture: String,
   slug: String,
-  products: { type: [], ref: Product },
+  products: [{ type: Schema.Types.ObjectId, ref: "product" }],
 });
 
 const Category = mongoose.model("Category", categorySchema);

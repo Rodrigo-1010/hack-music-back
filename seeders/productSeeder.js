@@ -1,12 +1,4 @@
-const mongoose = require("mongoose");
-const Product = require("./models/Product");
-
-module.exports = async function dbSetup() {
-  mongoose.connect("mongodb://localhost:27017/hack-music");
-  mongoose.connection
-    .once("open", () => console.log("¡Conexión con la base de datos establecida!"))
-    .on("error", (error) => console.log(error));
-};
+const Product = require("../models/Product");
 
 const seedProducts = [
   {
