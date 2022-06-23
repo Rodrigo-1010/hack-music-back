@@ -12,15 +12,17 @@ const userSchema = new Schema({
   orders: [{ type: Schema.ObjectId, ref: "Order" }], //array con id de referencias a Order
 });
 
-userSchema.pre("save", function (next) {
+//Este hook no funciona en queries UPDATEONE/UPDATEBYID, tiene que ser con save() para que se ejecute.
+userSchema.pre("save", async function (next) {
   const user = this;
 
   //Only hash the password if it has been modified (or is new)
   if (!user.isModified("password")) return next();
-
-  const hash = bcrypt.hashSync(user.password, 10);
-  user.password = hash;
-
+  try {
+    user.password = await bcrypt.hash(user.password, 10);
+  } catch (err) {
+    return next(err);
+  }
   next();
 });
 
