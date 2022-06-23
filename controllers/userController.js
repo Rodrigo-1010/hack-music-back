@@ -22,17 +22,21 @@ async function show(req, res) {
 
 // Store a newly created user in storage.
 async function store(req, res) {
-  try {
-    const newUser = await User.create({
-      firstName: req.body.firstName,
-      lastName: req.body.lastName,
-      password: req.body.password,
-      email: req.body.email,
-      phone: req.body.phone,
-    });
-    res.status(201).json(newUser);
-  } catch (err) {
-    res.status(500).json({ msg: err.message });
+  if (req.body.firstName && req.body.lastName && req.body.email) {
+    try {
+      const newUser = await User.create({
+        firstName: req.body.firstName,
+        lastName: req.body.lastName,
+        password: req.body.password,
+        email: req.body.email,
+        phone: req.body.phone,
+      });
+      res.status(201).json(newUser);
+    } catch (err) {
+      res.status(500).json({ msg: err.message });
+    }
+  } else {
+    res.status(400).json({ msg: err.message }); //Bad request
   }
 }
 
