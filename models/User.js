@@ -5,7 +5,12 @@ const bcrypt = require("bcryptjs");
 const userSchema = new Schema({
   firstName: { type: String, maxLength: 30, required: [true, "First name is required"] },
   lastName: { type: String, maxLength: 30, required: [true, "Last name is required"] },
-  email: { type: String, maxLength: 30, required: [true, "Email is required"], unique: true },
+  email: {
+    type: String,
+    maxLength: 30,
+    required: [true, "Email is required"],
+    unique: true,
+  },
   password: { type: String, maxLength: 30, required: [true, "Password is required"] },
   phone: { type: Number, max: 20 },
   address: [{ type: Schema.ObjectId, ref: "Address" }], //array con id de referencias a Address
