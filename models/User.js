@@ -3,11 +3,11 @@ const Schema = mongoose.Schema;
 const bcrypt = require("bcryptjs");
 
 const userSchema = new Schema({
-  firstName: String,
-  lastName: String,
-  email: String,
-  password: String,
-  phone: Number,
+  firstName: { type: String, maxLength: 30, required: [true, "First name is required"] },
+  lastName: { type: String, maxLength: 30, required: [true, "Last name is required"] },
+  email: { type: String, maxLength: 30, required: [true, "Email is required"], unique: true },
+  password: { type: String, maxLength: 30, required: [true, "Password is required"] },
+  phone: { type: Number, max: 20 },
   address: [{ type: Schema.ObjectId, ref: "Address" }], //array con id de referencias a Address
   orders: [{ type: Schema.ObjectId, ref: "Order" }], //array con id de referencias a Order
 });
@@ -27,10 +27,7 @@ userSchema.pre("save", async function (next) {
 });
 
 userSchema.methods.comparePassword = async function (password) {
-  console.log(password);
-  console.log(this.password);
   const match = await bcrypt.compare(password, this.password);
-  console.log(match);
   return match;
 };
 
