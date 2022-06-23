@@ -26,6 +26,7 @@ async function store(req, res) {
     const newUser = await User.create({
       firstName: req.body.firstName,
       lastName: req.body.lastName,
+      password: req.body.password,
       email: req.body.email,
       phone: req.body.phone,
     });

@@ -4,7 +4,7 @@
   "description": "\u0016Hack Academy's bootcamp final project - Ecommerce",
   "main": "\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001bserver\u001b[C\u001b[C\u001b[C\u001b[D\u001b[D\u001b[D.\u001b[C\u001b[C\u001b[D\u001b[Djs)",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon server.js"
   },
   "repository": {
     "type": "git",
