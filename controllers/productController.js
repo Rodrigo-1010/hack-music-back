@@ -8,11 +8,15 @@ async function index(req, res) {
     options = { category: req.query.category };
   }
 
+  if (req.query.premium) {
+    options = { premium: req.query.premium };
+  }
+
   try {
     const products = await Product.find(options);
     const category = await Category.find({ name: req.query.category });
     // SOLUCION PROVISORIA. USAR CATEGORY.FIND().POPULATE("PRODUCT"). FALTA REF A CATEGORY EN PROD. SCHEMA
-    const response = { products, category };
+    const response = req.query.category ? { products, category } : products; // Provisorio en linea con el comentario de arriba
 
     res.status(200).json(response);
   } catch (err) {

@@ -8,7 +8,7 @@ const productSchema = new Schema({
   picture: [String],
   price: Number,
   stock: Number,
-  outstand: Boolean,
+  premium: Boolean,
   slug: String,
 });
 
