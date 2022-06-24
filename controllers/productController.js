@@ -1,4 +1,5 @@
 const Product = require("../models/Product");
+const Category = require("../models/Category");
 
 // Display a listing of products.
 async function index(req, res) {
@@ -9,8 +10,11 @@ async function index(req, res) {
 
   try {
     const products = await Product.find(options);
-    // Otra opcion es ir a una ruta de categories y usar .populate("products")
-    res.status(200).json(products);
+    const category = await Category.find({ name: req.query.category });
+    // SOLUCION PROVISORIA. USAR CATEGORY.FIND().POPULATE("PRODUCT"). FALTA REF A CATEGORY EN PROD. SCHEMA
+    const response = { products, category };
+
+    res.status(200).json(response);
   } catch (err) {
     res.status(500).json({ msg: err.message });
   }
