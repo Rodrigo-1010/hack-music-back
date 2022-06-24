@@ -2,8 +2,14 @@ const Product = require("../models/Product");
 
 // Display a listing of products.
 async function index(req, res) {
+  let options = {};
+  if (req.query.category) {
+    options = { category: req.query.category };
+  }
+
   try {
-    const products = await Product.find();
+    const products = await Product.find(options);
+    // Otra opcion es ir a una ruta de categories y usar .populate("products")
     res.status(200).json(products);
   } catch (err) {
     res.status(500).json({ msg: err.message });

@@ -3,7 +3,8 @@ const Schema = mongoose.Schema;
 
 const categorySchema = new Schema({
   name: String,
-  description: String,
+  alias: String,
+  img: String,
   slug: String,
   products: [{ type: Schema.Types.ObjectId, ref: "product" }],
 });

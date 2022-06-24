@@ -1,6 +1,6 @@
 const seedProduct = [
   {
-    category: "wind",
+    category: "wind-instruments",
     name: "Yamaha YBS62 Professional Baritone Saxophone",
     description:
       "Yamaha YBS62 Professional Baritone Saxophone Yamaha's 62 series saxes have become a modern classic and are used by leading professional players worldwide. Their strong clear sound, and excellent playability have set new standards in professional model saxophones. In addition the 62 series saxes offer extremely accurate intonation and a comfortable response.",
@@ -10,7 +10,7 @@ const seedProduct = [
     slug: "wind-saxo-yamaha1",
   },
   {
-    category: "wind",
+    category: "wind-instruments",
     name: "Bach Model TR500",
     description:
       'The TR500 Trumpet combines a .460" medium-large bore with a red brass mouthpipe pipe for durability and ease of tone production. Stainless steel pistons provide smooth action while holding up well to the rigors of beginning band programs.',
@@ -20,7 +20,7 @@ const seedProduct = [
     slug: "wind-trumpet-bach",
   },
   {
-    category: "wind",
+    category: "wind-instruments",
     name: "Yamaha Ysl354 Standard Trombone",
     description:
       "Yamaha standard trombones have laser fused pluzuma welded bells for continuous, even bell vibrations. The inner slide is drawn from chrome-plated nickel-silver for better durability and response. The outer slide is one piece drawn brass for accurate diameter and better resonance. Yamaha's unique slide lock design safely locks the slide in place.",
@@ -30,7 +30,7 @@ const seedProduct = [
     slug: "wind-trombone-yamaha",
   },
   {
-    category: "wind",
+    category: "wind-instruments",
     name: "Yamaha Yss-475ii Intermediate Soprano Saxophone",
     description:
       "Yamaha has a fine line of soprano saxophones, starting with the Intermediate model, the YSS-475II.  The YSS-475II delivers professional qualities at an intermediate price. Much of its design is based upon the Custom EX saxes, and it shares many of the same features. The 475II offers outstanding response, tone, and intonation, as well as comfortable playability. This model features a one-piece design, Gold Baked Eopxy Lacquer, High F# key, and a laser egraved bell. ",
@@ -40,7 +40,7 @@ const seedProduct = [
     slug: "wind-saxo-yamaha2",
   },
   {
-    category: "wind",
+    category: "wind-instruments",
     name: "Yamaha YTR2330 Student Trumpet",
     description:
       "With upgraded mechanical elements, Yamaha has worked to improve on the world's most popular student trumpet with the intoduction of the TR-2330 trumpet. The TR-2330 combines state-of-the-art production expertise with design elements of Yamaha professional and custom horns. This standard trumpet now includes: highly durable and precisely honed monel pistons; newly designed two piece plasma welded bell; and perfectly rounded tubing for less resistance and refined tonal color.",
@@ -50,7 +50,7 @@ const seedProduct = [
     slug: "wind-trumpet-yamaha",
   },
   {
-    category: "percussion",
+    category: "drums-and-percussion",
     name: "Gretsch USA Custom 5-Piece Kit ",
     description:
       'A classic Gretsch USA Custom drum kit! Gretsch USA Custom Round Badge drums have served as the foundation for \u201cThat Great Gretsch Sound\u201d for over 65 years. At the heart of each drum is the legendary 6-ply Gretsch-formula maple/gum shell with its expertly formed 30-degree bearing edge, the exclusive "Silver Sealer\u201d interior finish and rugged die cast hoops. The custom drum building team in Ridgeland, South Carolina uses time-tested, classic finishing techniques. Gretsch\u2019s nitron-finishes are some of the world\u2019s finest, offering additional durability and legendary styling. Gretsch takes pride in knowing that USA Custom owners can sit down everyday and literally play the kit of their dreams. Earn your badge! Why you need this Gretsch USA Custom shell kit in Satin Millennium Maple: 6 ply Maple/ Gum Shell Satin Millennium Maple Finish Walnut Hoops with White Marine Pearl Inlay Round Badge Claw hooks on bass drum Die-Cast hoops on toms GTS tom mount Made in the USA 16x22,8x10, 8x12, 16x16fl and 6.5x14sn *Hardware not included * Drum set is on display in Showroom but not set up to be played. Get this Gretsch USA Custom drum set in Satin Millennium Maple at Alto Music today! Please call with any questions.',
@@ -63,7 +63,7 @@ const seedProduct = [
     slug: "percussion-drum-gretsch",
   },
   {
-    category: "percussion",
+    category: "drums-and-percussion",
     name: "Latin Percussion Santana Africa Speaks Bongo Set",
     description:
       "Latin Percussion is proud of the decade\u2019s long relationship with Carlos Santana and honored to offer this commemorative Africa Speaks bongo set. Based on LP's ever-popular Generation II, these bongos feature a vibrant yellow lacquer finish with incredibly intricate graphic art from the Santana Africa Speaks album.",
@@ -77,7 +77,7 @@ const seedProduct = [
     slug: "percussion-bongo-santana",
   },
   {
-    category: "percussion",
+    category: "drums-and-percussion",
     name: "Roland TD-17KVX-S V-Drums Electronic Drum Set",
     description:
       "The TD-17 Sound Module offers plenty of digital advantages to improve your drumming skills. It features a sound engine inherited from the flagship TD-50, for pro-quality expressive drum sounds that can faithfully reproduce the playability of acoustic drums. An array of built-in coaching functions will track your technique, measure your progress and increase your motivation. You can play along with your favorite tunes or watch online drum lessons while listening to the audio wirelessly - pairing your smartphone with the TD-17 via Bluetooth, which makes your daily practicing fun. With a host of interactive drumming features, the TD-17 module can help you to become a better drummer, faster.",
@@ -90,7 +90,7 @@ const seedProduct = [
     slug: "percussion-drum-roland1",
   },
   {
-    category: "percussion",
+    category: "drums-and-percussion",
     name: "Roland V-Drums Acoustic Design 706 Kit - Gloss Cherry Finish",
     description:
       "The VAD706 takes the electronic drumming experience where it\u2019s never gone before, combining Roland\u2019s flagship V-Drums technologies with the hand-crafted detail of premium-grade acoustic drums. This top-of-the-line V-Drums Acoustic Design kit features digital snare, ride, and hi-hat pads that bring ultra-detailed playability to the three most nuanced pieces in the kit. The next-generation TD-50X module provides unmatched tone, feel, and response, coupled with deep editing tools to fully personalize your sound and pro connectivity to take on any playing situation. Full-size wood shells are included throughout, with advanced sensing systems that deliver real-deal acoustic feel. And with four eye-popping finishes available, you can choose the look that perfectly matches your personal style and taste.",
@@ -103,7 +103,7 @@ const seedProduct = [
     slug: "percussion-drum-roland2",
   },
   {
-    category: "percussion",
+    category: "drums-and-percussion",
     name: "Tycoon STK29 Supremo Series Cajon",
     description:
       "Trycoon STK29 Supremo Series Cajon with Hardwood Faceplate. Tycoon Percussion's Supremo Series Cajon features strong bass tones and sharp slaps. Standard size with tunable snare wires (Allen Wrench included) and protective rubber feet, this is the perfect entry-level cajon. Each cajon is individually tested to ensure optimum sound quality.",
@@ -113,7 +113,7 @@ const seedProduct = [
     slug: "percussion-pbox-tycoon",
   },
   {
-    category: "percussion",
+    category: "drums-and-percussion",
     name: "Meinl Byzance Extra Dry Dual Hi-Hat Cymbal ",
     description:
       'Their hand hammered and lathed surfaces with warm sounds and selection of models may be rooted in tradition, but Meinl Byzance cymbals are the ultimate choice when it comes to modern versatility. Every Byzance model is hand hammered into shape by cymbal artisans in Turkey, giving each cymbal its own unique and colorful voice. The overall presence that Meinl Byzance delivers is dark, buttery warmth that flows around crisp definition. The Byzance 15" Dual Hi Hat is a stunning contrast of extra dry and brilliant finish with a unique combination of hammering and lathing. These cymbals are versatile and dynamic with a full-bodied sound that has applications in almost any musical setting..',
@@ -126,7 +126,7 @@ const seedProduct = [
     slug: "percussion-cymbal-byzance",
   },
   {
-    category: "percussion",
+    category: "drums-and-percussion",
     name: "Zildjian AZ100-LTD Armand Zildjian Limited Edition ",
     description:
       "In celebration of what would have been Armand Zildjian\u2019s 100th birthday, Zildjian is releasing a limited number of Vintage A cymbals, hand-selected from Armand\u2019s personal collection. These one-of-a-kind instruments commemorate Armand\u2019s vast contributions to the development of the modern cymbal, his collaborations with the top drummers of the day and his legacy as the Father of Artist Relations. The Zildjian company is pleased to offer this limited release in celebration of Armand and all of his illustrious achievements.",
@@ -139,7 +139,7 @@ const seedProduct = [
     slug: "percussion-cymbal-zildjian",
   },
   {
-    category: "keyboard",
+    category: "keyboards-and-pianos",
     name: "Roland RP701-DR Classic Design Piano",
     description:
       ".If you\u2019re looking at a piano for the whole family, the Roland RP701 is the perfect package. Sound quality and keyboard feel are the two most important factors when learning to play, and this affordable digital instrument offers bright, rich tone courtesy of Roland\u2019s SuperNATURAL Piano technology, plus our highly playable PHA-4 Standard keyboard for the authentic feel of an acoustic piano. \n\nThe RP701 is also designed to be so intuitive to use that even younger players can jump in right away. Easy-to-read icons and a clutter-free front panel ensure that the focus is on playing and enjoyment, not reading the owner\u2019s manual. And with built-in Bluetooth connectivity for streaming music from your smartphone and accessing a world of apps, there\u2019s always something new to try and keep everyone motivated. Fill the room with music via the powerful onboard speakers, sharpen your skills in private with immersive Headphones 3D Ambience, or simply appreciate the traditional look of a high-class piano that brings a note of sophistication to your home. ",
@@ -153,7 +153,7 @@ const seedProduct = [
     slug: "keyboard-electronic-roland",
   },
   {
-    category: "keyboard",
+    category: "keyboards-and-pianos",
     name: "Nord Stage 3 88 (88\u2011key Stage Piano)",
     description:
       "The Nord Stage 3 is the fifth generation of the successful Stage series, continuing Nord\u2019s vision of the ultimate instrument for the performing musician. This outstanding new flagship instrument features Nord\u2019s latest award-winning technologies, including the Nord Lead A1 Synth Engine with sample playback, the acclaimed Nord C2D organ, a greatly enhanced Piano Section and extensive hands-on Effects -- all in one exceptional performance keyboard. Two super-clear OLED displays for on-stage clarity, seamless transitions when changing programs/sounds, extended Split functionality with optional crossfade, and the addition of the new Song List Mode makes the Nord Stage 3 more intuitive and flexible than ever before for the live performer. The greatly enhanced Piano section features doubled memory (2 GB) for the exclusive Nord Piano Library, 120-voice polyphony and creative new Piano Filters. ",
@@ -205,7 +205,7 @@ const seedProduct = [
     slug: "accessories-tuner-korg",
   },
   {
-    category: "Strings",
+    category: "guitar-and-bass",
     name: "Guild Westerly Collection B-240E  ",
     description:
       "Guild pioneered acoustic bass guitar design in the mid-1970s with the B-50, which featured a jumbo body shape, arched mahogany back, and an easy to play, 30 3/4\u201d scale length. Decades later, these vintage features are back with our B-240E, offering bassists a workhorse acoustic instrument with big tone that plays with ease. Built with a solid Sitka spruce top over an arched mahogany back and mahogany sides, the B-240E will hold its own in acoustic jams. It can also be easily amplified through an onboard Guild/Fishman Bass Sonitone Bass system. The B-240E features a pau ferro fingerboard and bridge, slim C shape neck profile, 1 5/8\u201d bone nut and bone saddle, tortoiseshell pickguard, and a mother-of-pearl rosette.",
@@ -219,7 +219,7 @@ const seedProduct = [
     slug: "bass-guild",
   },
   {
-    category: "Strings",
+    category: "guitar-and-bass",
     name: "Fender Custom Shop 1966 Jazz Bass Journeyman ",
     description:
       "Fender was clearly having fun when it designed the 1966 Jazz Bass\u00ae. The evolution of the instrument reached new heights that year, with striking new features including neck binding, block inlays and paddle tuners. We love the original so much that the 1966 Jazz Bass Journeyman Relic\u00ae has been created to nearly the exact specifications of the original, with some streamlined upgrades.\n\nThe Journeyman Relic lacquer finish on the two-piece alder body has a terrific worn-in look and feel. The stable rift-sawn maple neck has a comfortable \u201cU\u201d profile, and the 9.5\u201d-radius round-lam rosewood fingerboard has narrow tall frets, plus mother-of-pearl block inlays and parchment binding for a classic signature look. Other features include a vintage-correct headstock strap button, nitrocellulose brown shell pickguard, finger rest, and vintage-style tuning machines with \u201cpaddle\u201d buttons. Includes deluxe hardshell case, strap and certificate of authenticity.",
@@ -233,10 +233,10 @@ const seedProduct = [
     slug: "bass-fender",
   },
   {
-    category: "Strings",
+    category: "guitar-and-bass",
     name: "Cordoba C12 Luthier Series Classical Acoustic Guitar ",
     description:
-      "Cordoba Luthier Series C12 Classical Acoustic Guitar w/Case. Solid european Spruce top, Solid Rosewood back & sides lattice bracing raised fingerboard.\n\nThe handmade C12 features the vintage elegance of a hand-inlaid mother-of-pearl rosette inspired by a 1920s Domingo Esteso design and a beautiful flamed maple wedge on its solid Indian rosewood back. Modern design elements also include a lattice braced top and raised fingerboard for easy playability when accessing upper frets. Available with a solid European spruce or Canadian cedar top with Indian rosewood back and sides. Other notable features of the C12 include its black and gold tuning machines, ebony fingerboard and adjustable truss rod. Comes with a humidified hardshell case.",
+      "Cordoba Luthier Series C12 Classical Acoustic Guitar w/Case. Solid european Spruce top, Solid Rosewood back and sides lattice bracing raised fingerboard.\n\nThe handmade C12 features the vintage elegance of a hand-inlaid mother-of-pearl rosette inspired by a 1920s Domingo Esteso design and a beautiful flamed maple wedge on its solid Indian rosewood back. Modern design elements also include a lattice braced top and raised fingerboard for easy playability when accessing upper frets. Available with a solid European spruce or Canadian cedar top with Indian rosewood back and sides. Other notable features of the C12 include its black and gold tuning machines, ebony fingerboard and adjustable truss rod. Comes with a humidified hardshell case.",
     price: 2099.0,
     picture: [
       "../public/string/string-guitar-cordoba/guitar-cordoba-body.jpg",
@@ -247,7 +247,7 @@ const seedProduct = [
     slug: "guitar-cordoba",
   },
   {
-    category: "Strings",
+    category: "guitar-and-bass",
     name: "Taylor Custom #18 Grand Auditorium Acoustic Electric Guitar",
     description:
       "The combination of Indian Rosewood and Sitka Spruce has long delighted players for its blend of balance, sparkle, and warmth. For this custom Grand Auditorium, Taylor chose to honor the much-loved wood pairing with a set of enhanced appointments both inside and out. while a striking antique Blonde finish treatment for the top strikes an eye-catching visual note. Other key details include pale maple binding with Hawaiian koa purfling, a- single-ring paua rosette, a rosewood pickguard and mother-of pearl inlays in our mission style. Adorned with a full-body gloss finish and complete with both ES2 electronics and premium Gotoh 510 tuners in antique gold, this custom model supplies beauty and rich tone in abundance. It ships with a deluxe brown hard-shell case.",
@@ -261,7 +261,7 @@ const seedProduct = [
     slug: "guitar-taylor",
   },
   {
-    category: "Strings",
+    category: "guitar-and-bass",
     name: "Fender Eric Johnson Signature Strat in Black Finish",
     description:
       "The Eric Johnson signature Stratocaster guitar features a light two-piece alder body with deep \u201957-style body contours and cavities; one-piece, vintage-tinted quartersawn plain maple neck (contours sanded very smooth) with light \u201957-style V shape, 12\u201d fingerboard radius and highly-polished frets; special Eric Johnson single-coil pickups with countersunk screws and a five-way switch; vintage tremolo with silver-painted block; \u201957-style string recess; no paint between the base plate and the block; five springs (no tremolo cover); master volume; neck and bridge tone controls; thin neck-cap with staggered machine heads; and \u201957-style parchment pickguard. Available with .010-.046 gauge strings and a thin-skin nitrocellulose lacquer finish.",
@@ -275,7 +275,7 @@ const seedProduct = [
     slug: "guitar-strato",
   },
   {
-    category: "Strings",
+    category: "guitar-and-bass",
     name: "Gibson 1960 Les Paul VOS Electric Guitar Tomato Soup ",
     description:
       "This limited-edition 60th Anniversary model celebrates the iconic 1960 Les Paul Standard, which has shaped music across genres for six decades. The artisans at Gibson Custom Shop have proudly recreated the experience of owning a priceless original thanks to painstaking attention to detail and tireless study of vintage examples, closely following the three distinct versions seen within 1960. Those made in the first third of the year (V1) had the same specs as 1959 models, while the middle third (V2) had thinner neck proles, different knobs and brighter colors. The final third (V3) featured even thinner neck profiles. Each version is available within this historic limited run of instruments, inspiring players in different ways. Included is a 60th Anniversary switch plate, a commemorative Certificate of Authenticity booklet and a vintage replica hardshell case.",
@@ -289,7 +289,7 @@ const seedProduct = [
     slug: "guitar-gibson1",
   },
   {
-    category: "Strings",
+    category: "guitar-and-bass",
     name: "Gibson 1961 SG Les Paul Standard VOS",
     description:
       "1961 brought some big changes to the Gibson Les Paul\u2122, most notably a sleek, allnew, double-cutaway, all-mahogany body design that would later be renamed the SG\u2122. This Gibson Custom Shop model recreates those cherished originals, complete with a Sideways Vibrola, a side-pull action vibrato that is similar to those found on models from the early 1960s. It also has a bound Authentic '61 Thin Prole mahogany neck, Kluson\u00ae tuners, an ABR-1 Tune-O-Matic\u2122 bridge, two Custombucker pickups, CTS\u00ae vintage-taper pots, and Black Beauty capacitors.",
@@ -303,7 +303,7 @@ const seedProduct = [
     slug: "guitar-gibson2",
   },
   {
-    category: "Strings",
+    category: "guitar-and-bass",
     name: "Fender1951 Telecaster Relic in Aged Nocaster Blonde",
     description:
       "The legendary 1951 Telecaster was the progenitor of all solidbody electric guitars to follow \u2014 and today\u2019s Custom Shop Limited Edition 1951 Telecaster Relic celebrates that 6-string icon with a fastidious reincarnation, complete with a 2-piece select ash body, an aged translucent blonde nitro Relic finish, and hand-wound single-coil Custom Shop \u201950/\u201951 Blackguard pickups that deliver a versatile range of classic Tele twang and bite.\n\nModified \u201951 \u201cNocaster\u201d wiring, while similar to the original, includes a blender pot and a brighter rhythm setting for the neck position. Handcrafted in the USA by Fender\u2019s elite Custom Shop luthiers, the Limited Edition 1951 Telecaster Relic features a quartersawn AA flame maple neck with a satisfying 10/56 \u201cV\u201d neck carve and a high-performance 7.25\u20139.5-inch vintage-modern compound-radius fingerboard.",

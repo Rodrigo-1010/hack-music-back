@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 const seedDB = require("./seeders/productSeeder");
+const categorySeeder = require("./seeders/categorySeeder");
 
 module.exports = async function dbSetup() {
   mongoose.connect("mongodb://localhost:27017/hack-music");
@@ -9,5 +10,6 @@ module.exports = async function dbSetup() {
 
   //Comentar/descomentar seedDb() para que seeders se ejecuten automaticamente cada vez que se levanta el servidor.
 
-  // seedDB();
+  seedDB();
+  categorySeeder();
 };
