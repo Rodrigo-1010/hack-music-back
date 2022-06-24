@@ -7,7 +7,7 @@ const seedProduct = [
     price: 9572,
     picture: ["https://i.postimg.cc/90KkCvVk/1-wind-saxo-yamaha1.jpg"],
     stock: 20,
-    premium: true,
+    premium: false,
     slug: "wind-saxo-yamaha1",
   },
   {
@@ -94,7 +94,7 @@ const seedProduct = [
       "https://i.postimg.cc/L4J2FS3N/12-percussion-roland1-up.jpg",
     ],
     stock: 20,
-    premium: false,
+    premium: true,
     slug: "percussion-drum-roland1",
   },
   {
@@ -178,7 +178,7 @@ const seedProduct = [
       "https://i.postimg.cc/yxZMgVfK/24-nord-stage-3-88-88-key-stage-piano.jpg",
     ],
     stock: 20,
-    premium: true,
+    premium: false,
     pic3: null,
     slug: "keyboard-stage-nord",
   },
@@ -232,12 +232,12 @@ const seedProduct = [
       "Guild pioneered acoustic bass guitar design in the mid-1970s with the B-50, which featured a jumbo body shape, arched mahogany back, and an easy to play, 30 3/4” scale length. Decades later, these vintage features are back with our B-240E, offering bassists a workhorse acoustic instrument with big tone that plays with ease. Built with a solid Sitka spruce top over an arched mahogany back and mahogany sides, the B-240E will hold its own in acoustic jams. It can also be easily amplified through an onboard Guild/Fishman Bass Sonitone Bass system. The B-240E features a pau ferro fingerboard and bridge, slim C shape neck profile, 1 5/8” bone nut and bone saddle, tortoiseshell pickguard, and a mother-of-pearl rosette.",
     price: 499,
     picture: [
-      "https://i.postimg.cc/yxcG6LdY/31-bass-guild-back.jpg",
+      "https://i.postimg.cc/yxcG6LdY/31-bass-guild-front.jpg",
       "https://i.postimg.cc/3rmfvb83/32-bass-guild-body.png",
-      "https://i.postimg.cc/2jZMxSwR/33-bass-guild-front.jpg",
+      "https://i.postimg.cc/2jZMxSwR/33-bass-guild-back.jpg",
     ],
     stock: 20,
-    premium: true,
+    premium: false,
     slug: "bass-guild",
   },
   {
@@ -254,7 +254,7 @@ const seedProduct = [
       "https://i.postimg.cc/Fsb62C8T/36-bass-fender-back.jpg",
     ],
     stock: 20,
-    premium: true,
+    premium: false,
     slug: "bass-fender",
   },
   {
@@ -271,7 +271,7 @@ const seedProduct = [
       "https://i.postimg.cc/MGHrf6TL/39-guitar-cordoba-back.jpg",
     ],
     stock: 20,
-    premium: false,
+    premium: true,
     slug: "guitar-cordoba",
   },
   {
@@ -286,7 +286,7 @@ const seedProduct = [
       "https://i.postimg.cc/FRJWGT0g/42-guitar-gibson1-back.jpg",
     ],
     stock: 20,
-    premium: false,
+    premium: true,
     slug: "guitar-taylor",
   },
   {
@@ -327,11 +327,11 @@ const seedProduct = [
     price: 4999,
     picture: [
       "https://i.postimg.cc/66rz32c3/49-guitar-taylor-body.jpg",
-      "https://i.postimg.cc/FKwGf0wf/50-guitar-taylor-front.jpg",
+
       "https://i.postimg.cc/0jsfnPkP/51-guitar-taylor-back.jpg",
     ],
     stock: 20,
-    premium: false,
+    premium: true,
     slug: "guitar-gibson2",
   },
   {
