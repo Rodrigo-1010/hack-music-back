@@ -44,24 +44,19 @@ for (const category of categoriesSeed) {
   category.products = [];
 }
 
-const categorySeeder = async () => {
-  const products = await Product.find();
+const createCategories = async () => {
+  return await Category.insertMany(categoriesSeed);
+};
 
-  for (const product of products) {
-    for (const category of categoriesSeed) {
-      if (category.name === product.category) {
+const assignProductsToCategories = async (categories, products) => {
+  for (const category of categories) {
+    for (const product of products) {
+      if (product.categoryId === category._id) {
         category.products.push(product);
       }
     }
+    await Category.findOneAndUpdate({ _id: category._id }, { products: category.products });
   }
-
-  // For checking length of products in category
-  // for (const category of categoriesSeed) {
-  //   console.log(category.name + ": " + category.products.length);
-  // }
-
-  await Category.deleteMany({});
-  await Category.insertMany(categoriesSeed);
 };
 
-module.exports = categorySeeder;
+module.exports = { createCategories, assignProductsToCategories };

@@ -3,22 +3,23 @@ const Category = require("../models/Category");
 
 // Display a listing of products.
 async function index(req, res) {
-  let options = {};
   if (req.query.category) {
-    options = { category: req.query.category };
+    try {
+      const category = await Category.findOne({ name: req.query.category }).populate("products");
+      return res.status(200).json(category);
+    } catch (err) {
+      return res.status(500).json({ msg: err.message });
+    }
   }
 
+  let options = {};
   if (req.query.premium) {
     options = { premium: req.query.premium };
   }
 
   try {
     const products = await Product.find(options);
-    const category = await Category.find({ name: req.query.category });
-    // SOLUCION PROVISORIA. USAR CATEGORY.FIND().POPULATE("PRODUCT"). FALTA REF A CATEGORY EN PROD. SCHEMA
-    const response = req.query.category ? { products, category } : products; // Provisorio en linea con el comentario de arriba
-
-    res.status(200).json(response);
+    res.status(200).json(products);
   } catch (err) {
     res.status(500).json({ msg: err.message });
   }

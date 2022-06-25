@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 const seedDB = require("./seeders/productSeeder");
+const seeder = require("./seeders/seeder");
 const categorySeeder = require("./seeders/categorySeeder");
 
 module.exports = async function dbSetup() {
@@ -10,6 +11,7 @@ module.exports = async function dbSetup() {
 
   //Comentar/descomentar seedDb() para que seeders se ejecuten automaticamente cada vez que se levanta el servidor.
 
-  seedDB();
-  categorySeeder();
+  seeder();
+  // seedDB();
+  // categorySeeder();
 };
