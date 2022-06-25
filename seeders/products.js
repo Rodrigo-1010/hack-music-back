@@ -232,9 +232,9 @@ const seedProduct = [
       "Guild pioneered acoustic bass guitar design in the mid-1970s with the B-50, which featured a jumbo body shape, arched mahogany back, and an easy to play, 30 3/4” scale length. Decades later, these vintage features are back with our B-240E, offering bassists a workhorse acoustic instrument with big tone that plays with ease. Built with a solid Sitka spruce top over an arched mahogany back and mahogany sides, the B-240E will hold its own in acoustic jams. It can also be easily amplified through an onboard Guild/Fishman Bass Sonitone Bass system. The B-240E features a pau ferro fingerboard and bridge, slim C shape neck profile, 1 5/8” bone nut and bone saddle, tortoiseshell pickguard, and a mother-of-pearl rosette.",
     price: 499,
     picture: [
+      "https://i.postimg.cc/2jZMxSwR/33-bass-guild-back.jpg",
       "https://i.postimg.cc/yxcG6LdY/31-bass-guild-front.jpg",
       "https://i.postimg.cc/3rmfvb83/32-bass-guild-body.png",
-      "https://i.postimg.cc/2jZMxSwR/33-bass-guild-back.jpg",
     ],
     stock: 20,
     premium: false,
@@ -249,12 +249,12 @@ const seedProduct = [
       "The Journeyman Relic lacquer finish on the two-piece alder body has a terrific worn-in look and feel. The stable rift-sawn maple neck has a comfortable “U” profile, and the 9.5”-radius round-lam rosewood fingerboard has narrow tall frets, plus mother-of-pearl block inlays and parchment binding for a classic signature look. Other features include a vintage-correct headstock strap button, nitrocellulose brown shell pickguard, finger rest, and vintage-style tuning machines with “paddle” buttons. Includes deluxe hardshell case, strap and certificate of authenticity.",
     price: 4400,
     picture: [
-      "https://i.postimg.cc/Z5TQZFh4/34-bass-fender-body.jpg",
       "https://i.postimg.cc/ncf5SfRs/35-bass-fender-front.jpg",
+      "https://i.postimg.cc/Z5TQZFh4/34-bass-fender-body.jpg",
       "https://i.postimg.cc/Fsb62C8T/36-bass-fender-back.jpg",
     ],
     stock: 20,
-    premium: false,
+    premium: true,
     slug: "bass-fender",
   },
   {
@@ -266,8 +266,8 @@ const seedProduct = [
       "The handmade C12 features the vintage elegance of a hand-inlaid mother-of-pearl rosette inspired by a 1920s Domingo Esteso design and a beautiful flamed maple wedge on its solid Indian rosewood back. Modern design elements also include a lattice braced top and raised fingerboard for easy playability when accessing upper frets. Available with a solid European spruce or Canadian cedar top with Indian rosewood back and sides. Other notable features of the C12 include its black and gold tuning machines, ebony fingerboard and adjustable truss rod. Comes with a humidified hardshell case.",
     price: 2099,
     picture: [
-      "https://i.postimg.cc/hvWCYVrF/37-guitar-cordoba-body.jpg",
       "https://i.postimg.cc/bw3BvDzb/38-guitar-cordoba-front.jpg",
+      "https://i.postimg.cc/hvWCYVrF/37-guitar-cordoba-body.jpg",
       "https://i.postimg.cc/MGHrf6TL/39-guitar-cordoba-back.jpg",
     ],
     stock: 20,
@@ -281,8 +281,8 @@ const seedProduct = [
       "The combination of Indian Rosewood and Sitka Spruce has long delighted players for its blend of balance, sparkle, and warmth. For this custom Grand Auditorium, Taylor chose to honor the much-loved wood pairing with a set of enhanced appointments both inside and out. while a striking antique Blonde finish treatment for the top strikes an eye-catching visual note. Other key details include pale maple binding with Hawaiian koa purfling, a- single-ring paua rosette, a rosewood pickguard and mother-of pearl inlays in our mission style. Adorned with a full-body gloss finish and complete with both ES2 electronics and premium Gotoh 510 tuners in antique gold, this custom model supplies beauty and rich tone in abundance. It ships with a deluxe brown hard-shell case.",
     price: 3999,
     picture: [
-      "https://i.postimg.cc/PJW6nN3C/40-guitar-gibson1-body.jpg",
       "https://i.postimg.cc/9fkgG6wQ/41-guitar-gibson1-front.jpg",
+      "https://i.postimg.cc/PJW6nN3C/40-guitar-gibson1-body.jpg",
       "https://i.postimg.cc/FRJWGT0g/42-guitar-gibson1-back.jpg",
     ],
     stock: 20,
@@ -296,8 +296,8 @@ const seedProduct = [
       "The Eric Johnson signature Stratocaster guitar features a light two-piece alder body with deep ’57-style body contours and cavities; one-piece, vintage-tinted quartersawn plain maple neck (contours sanded very smooth) with light ’57-style V shape, 12” fingerboard radius and highly-polished frets; special Eric Johnson single-coil pickups with countersunk screws and a five-way switch; vintage tremolo with silver-painted block; ’57-style string recess; no paint between the base plate and the block; five springs (no tremolo cover); master volume; neck and bridge tone controls; thin neck-cap with staggered machine heads; and ’57-style parchment pickguard. Available with .010-.046 gauge strings and a thin-skin nitrocellulose lacquer finish.",
     price: 2299,
     picture: [
-      "https://i.postimg.cc/HkZ6gq29/43-guitar-gibson2-body.jpg",
       "https://i.postimg.cc/bNR66DSM/44-guitar-gibson2-front.jpg",
+      "https://i.postimg.cc/HkZ6gq29/43-guitar-gibson2-body.jpg",
       "https://i.postimg.cc/HsmZ44nX/45-guitar-gibson2-back.jpg",
     ],
     stock: 20,
@@ -311,8 +311,8 @@ const seedProduct = [
       "This limited-edition 60th Anniversary model celebrates the iconic 1960 Les Paul Standard, which has shaped music across genres for six decades. The artisans at Gibson Custom Shop have proudly recreated the experience of owning a priceless original thanks to painstaking attention to detail and tireless study of vintage examples, closely following the three distinct versions seen within 1960. Those made in the first third of the year (V1) had the same specs as 1959 models, while the middle third (V2) had thinner neck proles, different knobs and brighter colors. The final third (V3) featured even thinner neck profiles. Each version is available within this historic limited run of instruments, inspiring players in different ways. Included is a 60th Anniversary switch plate, a commemorative Certificate of Authenticity booklet and a vintage replica hardshell case.",
     price: 6499,
     picture: [
-      "https://i.postimg.cc/JznQPTLD/46-guitar-strato-body.png",
       "https://i.postimg.cc/Twm0npXt/47-guitar-strato-front.png",
+      "https://i.postimg.cc/JznQPTLD/46-guitar-strato-body.png",
       "https://i.postimg.cc/rsN9Y3sW/48-guitar-strato-back.png",
     ],
     stock: 20,
@@ -326,12 +326,11 @@ const seedProduct = [
       "1961 brought some big changes to the Gibson Les Paul™, most notably a sleek, allnew, double-cutaway, all-mahogany body design that would later be renamed the SG™. This Gibson Custom Shop model recreates those cherished originals, complete with a Sideways Vibrola, a side-pull action vibrato that is similar to those found on models from the early 1960s. It also has a bound Authentic '61 Thin Prole mahogany neck, Kluson® tuners, an ABR-1 Tune-O-Matic™ bridge, two Custombucker pickups, CTS® vintage-taper pots, and Black Beauty capacitors.",
     price: 4999,
     picture: [
-      "https://i.postimg.cc/66rz32c3/49-guitar-taylor-body.jpg",
-
       "https://i.postimg.cc/0jsfnPkP/51-guitar-taylor-back.jpg",
+      "https://i.postimg.cc/66rz32c3/49-guitar-taylor-body.jpg",
     ],
     stock: 20,
-    premium: true,
+    premium: false,
     slug: "guitar-gibson2",
   },
   {
@@ -343,8 +342,8 @@ const seedProduct = [
       "Modified ’51 “Nocaster” wiring, while similar to the original, includes a blender pot and a brighter rhythm setting for the neck position. Handcrafted in the USA by Fender’s elite Custom Shop luthiers, the Limited Edition 1951 Telecaster Relic features a quartersawn AA flame maple neck with a satisfying 10/56 “V” neck carve and a high-performance 7.25–9.5-inch vintage-modern compound-radius fingerboard.",
     price: 4600,
     picture: [
-      "https://i.postimg.cc/Prdy8XVM/52-guitar-tele-body.jpg",
       "https://i.postimg.cc/Hs32wqf1/53-guitar-tele-front.jpg",
+      "https://i.postimg.cc/Prdy8XVM/52-guitar-tele-body.jpg",
       "https://i.postimg.cc/sgN48pjn/54-guitar-tele-back.jpg",
     ],
     stock: 20,
