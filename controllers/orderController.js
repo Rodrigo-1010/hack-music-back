@@ -10,32 +10,38 @@ async function show(req, res) {}
 
 // Store a newly created order in storage.
 async function store(req, res) {
-  console.log(req.body);
-  const productsIds = req.body.cartItems.map((cartItem) => cartItem.productId);
   try {
-    const products = await Product.find(
+    const dbProducts = await Product.find(
       {
-        _id: { $in: productsIds },
+        _id: { $in: req.body.cartItems.map((cartItem) => cartItem.productId) },
       },
-      "name price",
+      "id name price",
     );
-    // Chequear esta info como llega. Array de objetos?
+
+    const orderProducts = req.body.cartItems.map((cartItem) => {
+      const productDB = dbProducts.find((product) => product.id === cartItem.productId);
+      return {
+        id: cartItem.productId,
+        name: productDB.name,
+        price: productDB.price,
+        quantity: cartItem.quantity,
+        subtotal: cartItem.quantity * productDB.price,
+      };
+    });
+
+    const totalPrice = orderProducts.reduce((sum, product) => sum + product.subtotal, 0);
+
     const buyer = await User.find({ email: req.auth.email });
     if (!buyer) return res.status(400).json({ msg: "User not found" });
 
-    const totalPrice = products.reduce((accum, product) => {
-      return accum + product.quantity * product.price;
-    });
-
     const order = await Order.create({
       buyer: req.body.user, // O buyer
-      products: products,
+      products: orderProducts,
       totalPrice: totalPrice,
       status: "not paid", // Estos hay que definir bien el string para cada uno...
       paymentMethod: "", // Same que status
       address: "",
     });
-
     return res.status(200).json(order);
   } catch (err) {
     return res.status(500).json({ msg: err.message });
