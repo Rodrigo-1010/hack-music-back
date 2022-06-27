@@ -11,6 +11,9 @@ async function show(req, res) {}
 // Store a newly created order in storage.
 async function store(req, res) {
   try {
+    const buyer = await User.findOne({ email: req.auth.email });
+    if (!buyer) return res.status(400).json({ msg: "User not found" });
+
     const dbProducts = await Product.find(
       {
         _id: { $in: req.body.cartItems.map((cartItem) => cartItem.productId) },
@@ -31,16 +34,13 @@ async function store(req, res) {
 
     const totalPrice = orderProducts.reduce((sum, product) => sum + product.subtotal, 0);
 
-    const buyer = await User.find({ email: req.auth.email });
-    if (!buyer) return res.status(400).json({ msg: "User not found" });
-
     const order = await Order.create({
-      buyer: req.body.user, // O buyer
+      buyer: buyer,
       products: orderProducts,
       totalPrice: totalPrice,
       status: "not paid", // Estos hay que definir bien el string para cada uno...
-      paymentMethod: "", // Same que status
-      address: "",
+      paymentMethod: null, // Same que status.. Donde deberiamos definirlos?
+      address: null,
     });
     return res.status(200).json(order);
   } catch (err) {
@@ -48,10 +48,27 @@ async function store(req, res) {
   }
 }
 
-// Capaz hay que agregar el patch para cambiar SOLO el status...
+async function update(req, res) {
+  // Habria que asegurarse que vengan bien el paymentMethod y address antes de guardar. Middleware?
+  try {
+    const order = await Order.findByIdAndUpdate(
+      req.params.id,
+      {
+        status: "paid",
+        paymentMethod: req.body.order.paymentMethod,
+        address: req.body.order.address,
+      },
+      { new: true },
+    );
+    return res.status(200).json(order);
+  } catch (err) {
+    return res.status(500).json({ msg: err.message });
+  }
+}
 
 module.exports = {
   index,
   show,
   store,
+  update,
 };
