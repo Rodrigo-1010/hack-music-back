@@ -1,8 +1,8 @@
 const Product = require("../models/Product");
-const seedProducts = require("./products");
+const productsSeed = require("./products");
 
 const createProducts = async (categories) => {
-  const products = seedProducts;
+  const products = productsSeed;
   for (const product of products) {
     for (const category of categories) {
       if (product.categoryName === category.name) {

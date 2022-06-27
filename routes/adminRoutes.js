@@ -1,7 +1,9 @@
 const express = require("express");
 const adminRouter = express.Router();
 const adminController = require("../controllers/adminController");
+const { expressjwt: jwt } = require("express-jwt");
 
+adminRouter.use("/admins", jwt({ secret: process.env.JWT_SECRET_KEY, algorithms: ["HS256"] }));
 adminRouter.get("/admins", adminController.index);
 adminRouter.get("/admins/:id", adminController.show);
 adminRouter.post("/admins", adminController.store);

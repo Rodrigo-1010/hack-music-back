@@ -1,4 +1,4 @@
-const seedProduct = [
+const productsSeed = [
   {
     categoryName: "wind-instruments",
     name: "Yamaha YBS62 Professional Baritone Saxophone",
@@ -351,6 +351,8 @@ const seedProduct = [
     slug: "guitar-tele",
   },
 ];
+
+module.exports = productsSeed;
 
 /* const oldSeedProduct = [
   {
@@ -804,4 +806,4 @@ seedProduct.map((prod, index) => {
 
 console.log(seedProduct); */
 
-module.exports = seedProduct;
+
