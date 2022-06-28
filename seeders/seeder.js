@@ -10,15 +10,15 @@ const { createUser } = require("./userSeeder");
 const { createAdmin } = require("./adminSeeder");
 
 const seeder = async () => {
-  await Category.deleteMany();
-  await Product.deleteMany();
-  await User.deleteMany();
-  await Admin.deleteMany();
-  await createUser();
-  await createAdmin()
-  const categories = await createCategories();
-  const products = await createProducts(categories);
-  await assignProductsToCategories(categories, products);
+  // await Category.deleteMany();
+  // await Product.deleteMany();
+  // await User.deleteMany();
+  // await Admin.deleteMany();
+  // await createUser();
+  // await createAdmin();
+  // const categories = await createCategories();
+  // const products = await createProducts(categories);
+  // await assignProductsToCategories(categories, products);
 };
 
 module.exports = seeder;
