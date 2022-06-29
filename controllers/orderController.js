@@ -69,20 +69,32 @@ async function store(req, res) {
 }
 
 async function update(req, res) {
-  // Habria que asegurarse que vengan bien el paymentMethod y address antes de guardar. Middleware?
-  try {
-    const order = await Order.findByIdAndUpdate(
-      req.params.id,
-      {
-        status: "paid",
-        paymentMethod: req.body.order.paymentMethod,
-        address: req.body.order.address,
-      },
-      { new: true },
-    );
-    return res.status(200).json(order);
-  } catch (err) {
-    return res.status(500).json({ msg: err.message });
+  if (req.body.address) {
+    console.log(req.body.address);
+    try {
+      const order = await Order.findByIdAndUpdate(
+        req.params.id,
+        { address: req.body.address },
+        { new: true },
+      );
+      return res.status(200).json(order);
+    } catch (err) {
+      return res.status(500).json({ msg: err.message });
+    }
+  }
+
+  if (req.body.paymentMethod) {
+    console.log(req.body.paymentMethod);
+    try {
+      const order = await Order.findByIdAndUpdate(
+        req.params.id,
+        { paymentMethod: req.body.paymentMethod },
+        { new: true },
+      );
+      return res.status(200).json(order);
+    } catch (err) {
+      return res.status(500).json({ msg: err.message });
+    }
   }
 }
 
