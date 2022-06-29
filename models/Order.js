@@ -8,7 +8,7 @@ const orderSchema = new Schema(
     status: String,
     totalPrice: Number, // No asociar a los prices de products
     paymentMethod: String, // String?
-    address: String, // No asociar a una adress de la BD
+    address: Object, // No asociar a una adress de la BD
   },
   { timestamps: true },
 );
