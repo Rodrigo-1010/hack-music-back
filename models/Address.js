@@ -2,10 +2,11 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const addressSchema = new Schema({
-  line1: String,
-  line2: String,
-  postalCode: Number,
+  user: { type: Schema.Types.ObjectId, ref: "User" },
+  streetAddress: String,
+  city: String,
   country: String,
+  postalCode: Number,
 });
 
 const Address = mongoose.model("Address", addressSchema);

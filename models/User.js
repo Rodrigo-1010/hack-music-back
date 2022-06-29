@@ -13,7 +13,7 @@ const userSchema = new Schema({
   },
   password: { type: String, maxLength: 30, required: [true, "Password is required"] },
   phone: { type: Number, maxLength: 20 },
-  address: [{ type: Schema.ObjectId, ref: "Address" }], //array con id de referencias a Address
+  addresses: [{ type: Schema.ObjectId, ref: "Address" }], //array con id de referencias a Address
   orders: [{ type: Schema.ObjectId, ref: "Order" }], //array con id de referencias a Order
 });
 

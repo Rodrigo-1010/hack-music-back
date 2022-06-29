@@ -6,7 +6,17 @@ const User = require("../models/User");
 async function index(req, res) {}
 
 // Display the specified order.
-async function show(req, res) {}
+async function show(req, res) {
+  try {
+    const order = await Order.findById(req.params.id).populate({
+      path: "buyer",
+      populate: { path: "addresses" },
+    });
+    res.status(200).json(order);
+  } catch (err) {
+    res.status(500).json({ msg: err.message });
+  }
+}
 
 // Store a newly created order in storage.
 async function store(req, res) {
@@ -14,6 +24,7 @@ async function store(req, res) {
     const buyer = await User.findOne({ email: req.auth.email });
     if (!buyer) return res.status(400).json({ msg: "User not found" });
 
+    // Ver chequeo stock productos=
     const dbProducts = await Product.find(
       {
         _id: { $in: req.body.cartItems.map((cartItem) => cartItem.productId) },
@@ -38,10 +49,19 @@ async function store(req, res) {
       buyer: buyer,
       products: orderProducts,
       totalPrice: totalPrice,
-      status: "not paid", // Estos hay que definir bien el string para cada uno...
+      status: "not paid",
       paymentMethod: null, // Same que status.. Donde deberiamos definirlos?
       address: null,
     });
+
+    try {
+      await User.findByIdAndUpdate(buyer._id, { $push: { orders: order._id } });
+    } catch (err) {
+      console.log(err);
+    }
+
+    console.log(buyer);
+
     return res.status(200).json(order);
   } catch (err) {
     return res.status(500).json({ msg: err.message });
