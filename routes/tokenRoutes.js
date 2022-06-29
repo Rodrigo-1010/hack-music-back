@@ -26,6 +26,7 @@ tokensRouter.post("/tokens", async function sendToken(req, res) {
       const match = await user.comparePassword(req.body.password);
       if (!match) return res.json({ msg: "Credenciales no validas." });
       return res.json({
+        id: user.id,
         firstName: user.firstName,
         token: jwt.sign({ email: user.email }, process.env.JWT_SECRET_KEY),
       });

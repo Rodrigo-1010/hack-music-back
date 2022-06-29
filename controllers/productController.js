@@ -16,6 +16,9 @@ async function index(req, res) {
   if (req.query.premium) {
     options = { premium: req.query.premium };
   }
+  if (req.query.categoryName) {
+    options = { categoryName: req.query.categoryName };
+  }
 
   try {
     const products = await Product.find(options);
