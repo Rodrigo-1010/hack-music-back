@@ -9,4 +9,10 @@ const createUser = async () => {
   return await user.save();
 };
 
-module.exports = { createUser };
+const assignAddressToUser = async (user, userAddress) => {
+  await User.findByIdAndUpdate(user._id, {
+    $push: { addresses: userAddress },
+  });
+};
+
+module.exports = { createUser, assignAddressToUser };
