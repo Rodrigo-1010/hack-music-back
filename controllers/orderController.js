@@ -3,7 +3,14 @@ const Product = require("../models/Product");
 const User = require("../models/User");
 
 // Display a listing of orders.
-async function index(req, res) {}
+async function index(req, res) {
+  try {
+    const orders = await Order.find().populate("buyer");
+    res.status(200).json(orders);
+  } catch (err) {
+    res.status(500).json({ msg: err.message });
+  }
+}
 
 // Display the specified order.
 async function show(req, res) {

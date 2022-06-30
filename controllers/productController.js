@@ -59,6 +59,7 @@ async function store(req, res) {
 
 // Update the specified product in storage.
 async function update(req, res) {
+  console.log(req.body);
   const { name, category, description, price, stock, outstand, slug } = req.body;
   try {
     //SI NO ENCUENTRA EL PRODUCTO POR SU ID EN LA DB DEVUELVE 'null', AUN NO ENCONTRE COMO CONFIGURAR PARA DEVOLVER MSJ DE ERROR ACORDE.
