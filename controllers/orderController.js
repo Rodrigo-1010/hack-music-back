@@ -27,6 +27,7 @@ async function show(req, res) {
 
 // Store a newly created order in storage.
 async function store(req, res) {
+  console.log(req.body);
   try {
     const buyer = await User.findOne({ email: req.auth.email });
     if (!buyer) return res.status(400).json({ msg: "User not found" });
@@ -90,18 +91,17 @@ async function update(req, res) {
     }
   }
 
-  if (req.body.paymentMethod) {
-    console.log(req.body.paymentMethod);
-    try {
-      const order = await Order.findByIdAndUpdate(
-        req.params.id,
-        { paymentMethod: req.body.paymentMethod },
-        { new: true },
-      );
-      return res.status(200).json(order);
-    } catch (err) {
-      return res.status(500).json({ msg: err.message });
-    }
+  // separar address y payment
+  if (!req.body.paymentMethod) return res.status(400).json({ msg: "error" });
+  try {
+    const order = await Order.findByIdAndUpdate(
+      req.params.id,
+      { paymentMethod: req.body.paymentMethod },
+      { new: true },
+    );
+    return res.status(200).json(order);
+  } catch (err) {
+    return res.status(500).json({ msg: err.message });
   }
 }
 
