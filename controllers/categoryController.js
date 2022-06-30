@@ -3,7 +3,7 @@ const Category = require("../models/Category");
 // Display a listing of categories.
 async function index(req, res) {
   try {
-    const categories = await Category.find();
+    const categories = await Category.find().populate("products");
     res.status(200).json(categories);
   } catch (err) {
     res.status(500).json({ msg: err.message });
