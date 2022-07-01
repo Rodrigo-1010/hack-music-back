@@ -24,8 +24,8 @@ async function show(req, res) {
 async function store(req, res) {
   try {
     const newCategory = await Category.create({
-      name: req.body.name,
-      description: req.body.description,
+      alias: req.body.alias,
+      img: req.body.img, 
       slug: req.body.slug,
     });
     res.status(201).json(newCategory);
