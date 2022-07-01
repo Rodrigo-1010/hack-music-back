@@ -96,7 +96,7 @@ async function update(req, res) {
   try {
     const order = await Order.findByIdAndUpdate(
       req.params.id,
-      { paymentMethod: req.body.paymentMethod },
+      { paymentMethod: req.body.paymentMethod, status: "paid" },
       { new: true },
     );
     return res.status(200).json(order);

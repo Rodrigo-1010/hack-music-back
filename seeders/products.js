@@ -7,7 +7,7 @@ const productsSeed = [
     price: 9572,
     picture: ["https://i.postimg.cc/90KkCvVk/1-wind-saxo-yamaha1.jpg"],
     stock: 20,
-    premium: false,
+    premium: true,
     slug: "wind-saxo-yamaha1",
   },
   {
@@ -207,7 +207,7 @@ const productsSeed = [
       "https://i.postimg.cc/0QL3qT9B/28-accesories-speaker-qsc-front.png",
     ],
     stock: 20,
-    premium: true,
+    premium: false,
     slug: "accessories-speaker-qsc",
   },
   {
@@ -805,5 +805,3 @@ seedProduct.map((prod, index) => {
 });
 
 console.log(seedProduct); */
-
-
