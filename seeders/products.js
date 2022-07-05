@@ -193,23 +193,23 @@ const productsSeed = [
     premium: true,
     slug: "accessories-pick-dunlop",
   },
-  {
-    categoryName: "accessories",
-    name: 'QSC KLA12 12" 2-Way Line Array Loudspeaker',
-    description:
-      'The KLA12 12" 2-Way Line Array Loudspeaker (Black) is a compact speaker designed to be used as part of a speaker array system. The speaker features a rugged ABS plastic enclosure that provides lasting durability in a lightweight package. The speaker has a 12" woofer and a 1.75" compression tweeter to provide crisp, detailed sound reproduction with a wide frequency response. An efficient 500W x 500W power amp module provides clear, strong audio. The efficient design allows up to 5 KLA models to be driven from a single 120VAC 15 amp electrical circuit.\n' +
-      "\n" +
-      "The speaker has QSC's DEEP DSP algorithm, which provides extended bass by actively managing low-frequency transients. GuardRail protection circuitry prevents the amplifier module from unnatural and destructive clipping. An auto-standby mode will auto-engage after 5 minutes of inactivity to save energy. XLR and PowerCon input and thru connectors provide connection versatility, while a Phoenix connector allows daisy-chaining.",
-    price: 2249,
-    picture: [
-      "https://i.postimg.cc/cJLP77DX/26-accesories-speaker-qsc-body.png",
-      "https://i.postimg.cc/y8YL21FN/27-accesories-speaker-qsc-back.png",
-      "https://i.postimg.cc/0QL3qT9B/28-accesories-speaker-qsc-front.png",
-    ],
-    stock: 20,
-    premium: false,
-    slug: "accessories-speaker-qsc",
-  },
+  // {
+  //   categoryName: "accessories",
+  //   name: 'QSC KLA12 12" 2-Way Line Array Loudspeaker',
+  //   description:
+  //     'The KLA12 12" 2-Way Line Array Loudspeaker (Black) is a compact speaker designed to be used as part of a speaker array system. The speaker features a rugged ABS plastic enclosure that provides lasting durability in a lightweight package. The speaker has a 12" woofer and a 1.75" compression tweeter to provide crisp, detailed sound reproduction with a wide frequency response. An efficient 500W x 500W power amp module provides clear, strong audio. The efficient design allows up to 5 KLA models to be driven from a single 120VAC 15 amp electrical circuit.\n' +
+  //     "\n" +
+  //     "The speaker has QSC's DEEP DSP algorithm, which provides extended bass by actively managing low-frequency transients. GuardRail protection circuitry prevents the amplifier module from unnatural and destructive clipping. An auto-standby mode will auto-engage after 5 minutes of inactivity to save energy. XLR and PowerCon input and thru connectors provide connection versatility, while a Phoenix connector allows daisy-chaining.",
+  //   price: 2249,
+  //   picture: [
+  //     "https://i.postimg.cc/cJLP77DX/26-accesories-speaker-qsc-body.png",
+  //     "https://i.postimg.cc/y8YL21FN/27-accesories-speaker-qsc-back.png",
+  //     "https://i.postimg.cc/0QL3qT9B/28-accesories-speaker-qsc-front.png",
+  //   ],
+  //   stock: 20,
+  //   premium: false,
+  //   slug: "accessories-speaker-qsc",
+  // },
   {
     categoryName: "accessories",
     name: "Korg CA50 Chromatic Tuner",
@@ -224,6 +224,22 @@ const productsSeed = [
     premium: false,
     pic3: null,
     slug: "accessories-tuner-korg",
+  },
+
+  {
+    categoryName: "accessories",
+    name: "Pioneer DJ DJM-750MK2 4-Channel Professional DJ Club Mixer ",
+    description:
+      "Take the step to the DJ booth seamlessly with the DJM-750MK2, a 4-channel mixer which inherits key features and design elements from the DJM-900NXS2, creating a club-style setup when combined with our professional CDJ or XDJ multi players.\n",
+    price: 1299,
+    picture: [
+      "https://i.postimg.cc/HkJkdfBb/pioneer-dj-djm-750mk2-4-channel-professional-dj-club-mixer.jpg",
+      "https://i.postimg.cc/YCJq9bsZ/pioneer-dj-djm-750mk2-4-channel-professional-dj-club-mixer-2.jpg",
+    ],
+    stock: 20,
+    premium: false,
+    pic3: null,
+    slug: "accessories-pioneer-dj",
   },
   {
     categoryName: "guitar-and-bass",
