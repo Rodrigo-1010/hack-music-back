@@ -16,7 +16,9 @@ const productsSeed = [
     description:
       'The TR500 Trumpet combines a .460" medium-large bore with a red brass mouthpipe pipe for durability and ease of tone production. Stainless steel pistons provide smooth action while holding up well to the rigors of beginning band programs.',
     price: 1259,
-    picture: ["https://i.postimg.cc/pV64fn8B/2-wind-trumpet-bach.jpg"],
+    picture: [
+      "https://i.postimg.cc/Qdn27hTw/yamaha-ytr4335gsii-intermediate-trumpet-silver-plated.jpg",
+    ],
     stock: 20,
     premium: false,
     slug: "wind-trumpet-bach",
@@ -169,11 +171,46 @@ const productsSeed = [
   },
   {
     categoryName: "keyboards-and-pianos",
+    name: "Yamaha DGX-660 Portable Grand Digital Piano",
+    description:
+      ".Enjoy Yamaha piano touch and tone, plus numerous features that help make playing music FUN. Sing along using the built-in microphone jack with vocal effects. \n" +
+      "\n" +
+      "Enjoy the Yamaha 'You Are The Artist' library for learning hit songs, using best-selling sheet music, or learn by following the scrolling notes on the built-in Score Display. ",
+    price: 799,
+    picture: [
+      "https://i.postimg.cc/43KtwbFw/yamaha-dgx-660-portable-grand-digital-piano-white.jpg",
+      "https://i.postimg.cc/VkkX0cqx/yamaha-dgx-660-portable-grand-digital-piano-white-1.jpg",
+      "https://i.postimg.cc/XY1dwDxp/yamaha-dgx-660-portable-grand-digital-piano-white-2.jpg",
+    ],
+    stock: 20,
+    premium: false,
+    slug: "keyboard-electronic-yamaha-dgx",
+  },
+  {
+    categoryName: "keyboards-and-pianos",
+    name: "DEXIBELL COMBOJ7 Digital Organ",
+    description:
+      ".The first digital organ with motorized ‘draw-faders’ that offers, by the T2L technology (true to Life) \n" +
+      "\n" +
+      "Tone-wheel and vintage transistor organ sounds in addition to the legendary VIVO electric and acoustic piano sounds. ",
+    price: 2499,
+    picture: [
+      "https://i.postimg.cc/t487R02t/dexibell-comboj7-digital-organ.jpg",
+      "https://i.postimg.cc/DwS8Kfdw/dexibell-comboj7-digital-organ-1.jpg",
+      "https://i.postimg.cc/QM5CH6zL/dexibell-comboj7-digital-organ-2.jpg",
+    ],
+    stock: 20,
+    premium: false,
+    slug: "keyboard-electronic-dexibell",
+  },
+  {
+    categoryName: "keyboards-and-pianos",
     name: "Nord Stage 3 88 (88‑key Stage Piano)",
     description:
       "The Nord Stage 3 is the fifth generation of the successful Stage series, continuing Nord’s vision of the ultimate instrument for the performing musician. This outstanding new flagship instrument features Nord’s latest award-winning technologies, including the Nord Lead A1 Synth Engine with sample playback, the acclaimed Nord C2D organ, a greatly enhanced Piano Section and extensive hands-on Effects -- all in one exceptional performance keyboard. Two super-clear OLED displays for on-stage clarity, seamless transitions when changing programs/sounds, extended Split functionality with optional crossfade, and the addition of the new Song List Mode makes the Nord Stage 3 more intuitive and flexible than ever before for the live performer. The greatly enhanced Piano section features doubled memory (2 GB) for the exclusive Nord Piano Library, 120-voice polyphony and creative new Piano Filters. ",
     price: 4110,
     picture: [
+      "https://i.postimg.cc/JhgFdx7h/nord-stage-2-ex-hp76-lightweight-hammer-action-stage-piano.jpg",
       "https://i.postimg.cc/HsQGTkc4/23-nord-stage-3-88-88-key-stage-piano-2.jpg",
       "https://i.postimg.cc/yxZMgVfK/24-nord-stage-3-88-88-key-stage-piano.jpg",
     ],
@@ -192,6 +229,20 @@ const productsSeed = [
     stock: 20,
     premium: true,
     slug: "accessories-pick-dunlop",
+  },
+  {
+    categoryName: "accessories",
+    name: "Golden Age Project D1 Classic Dynamic Microphone",
+    description:
+      "Golden Age Project D1 Classic Dynamic Microphone. The D 1 is a classic dynamic microphone inspired by the 1950's style.",
+    price: 79.99,
+    picture: [
+      "https://i.postimg.cc/gcMgM4Mb/golden-age-project-d1-classic-dynamic-microphone.jpg",
+      "https://i.postimg.cc/8cnwjPFz/golden-age-project-d1-classic-dynamic-microphone-1.jpg",
+    ],
+    stock: 20,
+    premium: true,
+    slug: "accessories-golden/age",
   },
   {
     categoryName: "accessories",
@@ -326,8 +377,8 @@ const productsSeed = [
       "1961 brought some big changes to the Gibson Les Paul™, most notably a sleek, allnew, double-cutaway, all-mahogany body design that would later be renamed the SG™. This Gibson Custom Shop model recreates those cherished originals, complete with a Sideways Vibrola, a side-pull action vibrato that is similar to those found on models from the early 1960s. It also has a bound Authentic '61 Thin Prole mahogany neck, Kluson® tuners, an ABR-1 Tune-O-Matic™ bridge, two Custombucker pickups, CTS® vintage-taper pots, and Black Beauty capacitors.",
     price: 4999,
     picture: [
-      "https://i.postimg.cc/0jsfnPkP/51-guitar-taylor-back.jpg",
-      "https://i.postimg.cc/66rz32c3/49-guitar-taylor-body.jpg",
+      "https://i.postimg.cc/J4XMMyH0/ovation-elite-1778-tx-acoustic-electric-guitar-black-1.jpg",
+      "https://i.postimg.cc/jSrK5syX/ovation-elite-1778-tx-acoustic-electric-guitar-black.jpg",
     ],
     stock: 20,
     premium: false,
