@@ -258,7 +258,7 @@ const productsSeed = [
       "https://i.postimg.cc/8cnwjPFz/golden-age-project-d1-classic-dynamic-microphone-1.jpg",
     ],
     stock: 20,
-    premium: true,
+    premium: false,
     slug: "accessories-golden/age",
   },
   // {
@@ -305,7 +305,7 @@ const productsSeed = [
       "https://i.postimg.cc/YCJq9bsZ/pioneer-dj-djm-750mk2-4-channel-professional-dj-club-mixer-2.jpg",
     ],
     stock: 20,
-    premium: false,
+    premium: true,
     pic3: null,
     slug: "accessories-pioneer-dj",
   },
