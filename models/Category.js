@@ -5,6 +5,7 @@ const categorySchema = new Schema({
   name: String,
   alias: String,
   img: String,
+  headerImg: String,
   slug: String,
   products: [{ type: Schema.Types.ObjectId, ref: "Product" }],
 });

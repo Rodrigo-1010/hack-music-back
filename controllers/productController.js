@@ -1,5 +1,8 @@
 const Product = require("../models/Product");
 const Category = require("../models/Category");
+const fs = require("fs");
+const path = require("path");
+const formidable = require("formidable");
 
 // Display a listing of products.
 async function index(req, res) {
@@ -40,6 +43,26 @@ async function show(req, res) {
 
 // Store a newly created product in storage.
 async function store(req, res) {
+  // //FORMIDABLE
+  // const form = formidable({
+  //   multiples: true,
+  //   keepExtensions: true,
+  // });
+  // // ...
+  // console.log(req);
+  // form.parse(req, async (err, fields, files) => {
+  //   console.log(req);
+  //   // const ext = path.extname(files.avatar.path);
+  //   // const newFileName = `image_${Date.now()}${ext}`;
+  //   // const { data, error } = await supabase.storage
+  //   //   .from("avatars")
+  //   //   .upload(newFileName, fs.createReadStream(files.avatar.path), {
+  //   //     cacheControl: "3600",
+  //   //     upsert: false,
+  //   //     contentType: files.avatar.type,
+  //   //   });
+  // });
+  // ...
   try {
     const newProduct = await Product.create({
       name: req.body.name,

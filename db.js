@@ -11,7 +11,7 @@ module.exports = async function dbSetup() {
 
   //Comentar/descomentar seedDb() para que seeders se ejecuten automaticamente cada vez que se levanta el servidor.
 
-  seeder();
+  // seeder();
   // seedDB();
   // categorySeeder();
 };
