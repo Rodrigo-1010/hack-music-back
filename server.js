@@ -4,11 +4,7 @@ const app = express();
 const routes = require("./routes");
 const cors = require("cors");
 const dbSetup = require("./db");
-const { createClient } = require("@supabase/supabase-js");
 dbSetup();
-
-// .SUPABASE
-const supabase = createClient(process.env.SUPABASE_URL, process.env.SUPABASE_KEY);
 
 app.use(cors());
 app.use(express.json());
