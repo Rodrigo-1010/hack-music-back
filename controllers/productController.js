@@ -60,12 +60,12 @@ async function store(req, res) {
 // Update the specified product in storage.
 async function update(req, res) {
   console.log(req.body);
-  const { name, category, description, price, stock, outstand, slug } = req.body;
+  const { name, categoryName, description, price, stock, outstand, slug } = req.body;
   try {
     //SI NO ENCUENTRA EL PRODUCTO POR SU ID EN LA DB DEVUELVE 'null', AUN NO ENCONTRE COMO CONFIGURAR PARA DEVOLVER MSJ DE ERROR ACORDE.
     const updatedProduct = await Product.findByIdAndUpdate(
       { _id: req.params.id },
-      { name, category, description, price, stock, outstand, slug },
+      { name, categoryName, description, price, stock, outstand, slug },
     );
 
     res.status(200).json(updatedProduct);

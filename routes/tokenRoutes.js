@@ -36,4 +36,19 @@ tokensRouter.post("/tokens", async function sendToken(req, res) {
   }
 });
 
+tokensRouter.post("/tokens/admin", async function sendToken(req, res) {
+  try {
+    const admin = await Admin.findOne({ email: req.body.email });
+    if (!admin) return res.status(400).json({ msg: "Credenciales no validas." });
+    const match = await admin.comparePassword(req.body.password);
+    if (!match) return res.status(400).json({ msg: "Credenciales no validas." });
+    return res.json({
+      firstName: admin.firstName,
+      token: jwt.sign({ email: admin.email }, process.env.JWT_SECRET_KEY),
+    });
+  } catch (err) {
+    console.log(err);
+  }
+});
+
 module.exports = tokensRouter;

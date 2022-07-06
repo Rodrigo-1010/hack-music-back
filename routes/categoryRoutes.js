@@ -2,6 +2,7 @@ const express = require("express");
 const categoryRouter = express.Router();
 const categoryController = require("../controllers/categoryController");
 const { expressjwt: jwt } = require("express-jwt");
+const isAdmin = require("../middlewares/isAdmin");
 
 categoryRouter.get("/categories", categoryController.index);
 categoryRouter.get("/categories/:id", categoryController.show);
@@ -10,6 +11,7 @@ categoryRouter.get("/categories/:id", categoryController.show);
 categoryRouter.use(
   "/categories",
   jwt({ secret: process.env.JWT_SECRET_KEY, algorithms: ["HS256"] }),
+  isAdmin,
 );
 categoryRouter.post("/categories", categoryController.store);
 categoryRouter.patch("/categories/:id", categoryController.update);

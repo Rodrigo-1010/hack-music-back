@@ -36,11 +36,11 @@ async function store(req, res) {
 
 // Update the specified category in storage.
 async function update(req, res) {
-  const { name, description, slug } = req.body;
+  const { name, description, img, slug } = req.body;
   try {
     const updatedCategory = await Category.findByIdAndUpdate(
       { _id: req.params.id },
-      { name, description, picture, slug },
+      { name, description, img, slug },
     );
     res.status(200).json(updatedCategory);
   } catch (err) {

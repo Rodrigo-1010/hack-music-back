@@ -13,19 +13,19 @@ const { createAdmin } = require("./adminSeeder");
 const { assignUserToAddress } = require("./addressSeeder");
 
 const seeder = async () => {
-  // await Category.deleteMany();
-  // await Product.deleteMany();
-  // await User.deleteMany();
-  // await Admin.deleteMany();
-  // await Address.deleteMany();
-  // await Order.deleteMany();
-  // await createAdmin();
-  // const user = await createUser();
-  // const userAddress = await assignUserToAddress(user._id);
-  // await assignAddressToUser(user, userAddress);
-  // const categories = await createCategories();
-  // const products = await createProducts(categories);
-  // await assignProductsToCategories(categories, products);
+  await Category.deleteMany();
+  await Product.deleteMany();
+  await User.deleteMany();
+  await Admin.deleteMany();
+  await Address.deleteMany();
+  await Order.deleteMany();
+  await createAdmin();
+  const user = await createUser();
+  const userAddress = await assignUserToAddress(user._id);
+  await assignAddressToUser(user, userAddress);
+  const categories = await createCategories();
+  const products = await createProducts(categories);
+  await assignProductsToCategories(categories, products);
 };
 
 module.exports = seeder;
