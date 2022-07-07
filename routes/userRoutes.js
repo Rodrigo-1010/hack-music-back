@@ -6,7 +6,7 @@ const { expressjwt: jwt } = require("express-jwt");
 userRouter.get("/users", userController.index);
 userRouter.get("/users/:id", userController.show);
 
-userRouter.use("/admins", jwt({ secret: process.env.JWT_SECRET_KEY, algorithms: ["HS256"] }));
+userRouter.use("/users", jwt({ secret: process.env.JWT_SECRET_KEY, algorithms: ["HS256"] }));
 
 userRouter.post("/users", userController.store);
 userRouter.patch("/users/:id", userController.update);

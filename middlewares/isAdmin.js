@@ -1,10 +1,10 @@
-//Somos todos conscientes de que esto no es lo más seguro!
+const Admin = require("../models/Admin");
 
-function isAdmin(req, res, next) {
-  if (req.auth.email.includes("@admin")) {
+async function isAdmin(req, res, next) {
+  if (await Admin.find({ email: req.auth.email })) {
     next();
   } else {
-    res.status(403).json({ message: "Admins only" });
+    res.status(403).json({ message: "Unauthorized. Admin permissions required." });
   }
 }
 

@@ -2,6 +2,7 @@ const express = require("express");
 const addressRouter = express.Router();
 const addressController = require("../controllers/addressController");
 
+addressRouter.use("/addresses", jwt({ secret: process.env.JWT_SECRET_KEY, algorithms: ["HS256"] }));
 addressRouter.get("/addresses", addressController.index);
 addressRouter.get("/addresses/:id", addressController.show);
 addressRouter.post("/addresses", addressController.store);
