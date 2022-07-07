@@ -13,12 +13,13 @@ const { createAdmin } = require("./adminSeeder");
 const { assignUserToAddress } = require("./addressSeeder");
 
 const seeder = async () => {
-  await Category.deleteMany();
-  await Product.deleteMany();
-  await User.deleteMany();
-  await Admin.deleteMany();
-  await Address.deleteMany();
-  await Order.deleteMany();
+  await require("mongoose").connection.dropDatabase();
+  // await Category.deleteMany();
+  // await Product.deleteMany();
+  // await User.deleteMany();
+  // await Admin.deleteMany();
+  // await Address.deleteMany();
+  // await Order.deleteMany();
   await createAdmin();
   const user = await createUser();
   const userAddress = await assignUserToAddress(user._id);
