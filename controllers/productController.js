@@ -63,33 +63,37 @@ async function store(req, res) {
         upsert: false,
         contentType: files.picture.mimetype,
       });
+
+    try {
+      const newProduct = await Product.create({
+        name: fields.name,
+        categoryName: fields.category,
+        description: fields.description,
+        picture: [
+          "https://imbprxqctiygtzzeoghm.supabase.co/storage/v1/object/public/hack-music-images/" +
+            newFileName,
+        ],
+        price: fields.price,
+        stock: fields.stock,
+        premium: fields.premium,
+        slug: fields.slug,
+      });
+      res.status(201).json(newProduct);
+    } catch (err) {
+      res.status(500).json({ msg: err.message });
+    }
   });
-  try {
-    const newProduct = await Product.create({
-      name: req.body.name,
-      category: req.body.category,
-      description: req.body.description,
-      picture: [],
-      price: req.body.price,
-      stock: req.body.stock,
-      outstand: req.body.outstand,
-      slug: req.body.slug,
-    });
-    res.status(201).json(newProduct);
-  } catch (err) {
-    res.status(500).json({ msg: err.message });
-  }
 }
 
 // Update the specified product in storage.
 async function update(req, res) {
   console.log(req.body);
-  const { name, categoryName, description, price, stock, outstand, slug } = req.body;
+  const { name, categoryName, description, price, stock, premium, slug } = req.body;
   try {
     //SI NO ENCUENTRA EL PRODUCTO POR SU ID EN LA DB DEVUELVE 'null', AUN NO ENCONTRE COMO CONFIGURAR PARA DEVOLVER MSJ DE ERROR ACORDE.
     const updatedProduct = await Product.findByIdAndUpdate(
       { _id: req.params.id },
-      { name, categoryName, description, price, stock, outstand, slug },
+      { name, categoryName, description, price, stock, premium, slug },
     );
 
     res.status(200).json(updatedProduct);
